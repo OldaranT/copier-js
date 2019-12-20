@@ -17,6 +17,20 @@ copy.onclick = async () => {
   }
 };
 
+/** Write the Chrome logo to the clipboard when clicking "Copy" */
+async function clickIt(imagePath) {
+	try {
+  	const url = imagePath;
+  	const blobInput = await loadBlob(url);
+  	const clipboardItemInput = new ClipboardItem({'image/png' : blobInput});
+	  await navigator.clipboard.write([clipboardItemInput]);
+
+   	log('Image copied.');
+  } catch(e) {
+  	log(e);
+  }
+};
+
 /** Read from clipboard when clicking the Paste button */
 paste.onclick = async () => {
 	try {
