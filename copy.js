@@ -31,7 +31,7 @@ async function copyIt(imagePath) {
   }
 };
 
-/** Read from clipboard when clicking the Paste button */
+/** Read from clipboard when clicking the Paste button 
 paste.onclick = async () => {
 	try {
   	const clipboardItems = await navigator.clipboard.read();
@@ -43,7 +43,7 @@ paste.onclick = async () => {
   } catch(e) {
   	log('Failed to read clipboard');
   }
-};
+};*/
 
 /** Watch for pastes */
 navigator.clipboard.addEventListener('clipboardchange', async e => {
