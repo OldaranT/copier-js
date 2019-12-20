@@ -6,7 +6,7 @@ async function loadBlob(fileName) {
 /** Write the Chrome logo to the clipboard when clicking "Copy" */
 copy.onclick = async () => {
 	try {
-  	const url = 'https://upload.wikimedia.org/wikipedia/commons/5/53/Google_Chrome_Material_Icon-450x450.png';
+  	const url = './images/TeeeeHeeee.png';
   	const blobInput = await loadBlob(url);
   	const clipboardItemInput = new ClipboardItem({'image/png' : blobInput});
 	  await navigator.clipboard.write([clipboardItemInput]);
