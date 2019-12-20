@@ -3,7 +3,7 @@ async function loadBlob(fileName) {
   return await fetched.blob();
 }
 
-/** Write the Chrome logo to the clipboard when clicking "Copy" */
+/** Write the Chrome logo to the clipboard when clicking "Copy" 
 copy.onclick = async () => {
 	try {
   	const url = './images/TeeeeHeeee.png';
@@ -15,7 +15,7 @@ copy.onclick = async () => {
   } catch(e) {
   	log(e);
   }
-};
+};*/
 
 /** Write the Chrome logo to the clipboard when clicking "Copy" */
 async function clickIt(imagePath) {
