@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   margin: 0;
   background: #292929;
-  overflow: hidden;
+  overflow-y: auto;
   text-align: center;
 }
 h1 {
@@ -163,8 +163,6 @@ textarea {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
-  overflow-y: auto;
   max-height: 100%;
 }
 .flex-container-item {
