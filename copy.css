@@ -163,13 +163,11 @@ textarea {
   
   &-item {
     width: 200px;
-    background: firebrick;
     margin-top: 2%;
     
     @media (min-width: 48rem) {
       width: 49%;
       &:nth-child(odd) {
-        background: grey;
         margin-right: 2%;
       }
     }
@@ -177,7 +175,6 @@ textarea {
     @media (min-width: 62rem) {
       width: 23.5%;
       &:not(:nth-child(4n)) {
-        background: grey;
         margin-right: 2%;
       }
     }
