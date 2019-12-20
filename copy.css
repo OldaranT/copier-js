@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: #eee;
+  background: #292929;
   overflow: hidden;
   text-align: center;
 }
@@ -148,9 +148,12 @@ textarea {
 
 .zoom {
   transition: transform .2s; /* Animation */
-  width: 150px;
-  height: 150px;
+  width: 144px;
+  height: 140px;
   margin: 20px;
+  border: #357C3A;
+  border-radius: 50px;
+  border-style: solid;
 }
 
 .zoom:hover {
