@@ -18,7 +18,7 @@ copy.onclick = async () => {
 };*/
 
 /** Write the Chrome logo to the clipboard when clicking "Copy" */
-async function clickIt(imagePath) {
+async function copyIt(imagePath) {
 	try {
   	const url = imagePath;
   	const blobInput = await loadBlob(url);
